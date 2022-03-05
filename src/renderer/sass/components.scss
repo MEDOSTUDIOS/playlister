@@ -1,0 +1,134 @@
+.button {
+  border: none;
+  border-radius: 3px;
+  padding: 8px 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+
+  &.icon {
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.small {
+      .material-icons {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &.fab {
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+
+    .material-icons {
+      font-size: 28px;
+    }
+  }
+
+  &.white {
+    background-color: $lighter-gray;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: $light-gray;
+    }
+
+    &-p {
+      color: $primary-dark;
+      svg > path {
+        fill: $primary-dark;
+        transition: fill 0.3s ease-in-out;
+      }
+
+      &:hover {
+        color: $primary;
+        svg > path {
+          fill: $primary;
+        }
+      }
+    }
+
+    &-s {
+      color: $secondary-dark;
+      svg > path {
+        fill: $secondary-dark;
+        transition: fill 0.3s ease-in-out;
+      }
+
+      &:hover {
+        color: $secondary;
+        svg > path {
+          fill: $secondary;
+        }
+      }
+    }
+  }
+  &.primary {
+    background-color: $primary;
+    color: $lighter-gray;
+    svg > path {
+      fill: $lighter-gray;
+      transition: fill 0.3s ease-in-out;
+    }
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: $primary-dark;
+    }
+  }
+  &.secondary {
+    background-color: $secondary;
+    color: $lighter-gray;
+    svg > path {
+      fill: $lighter-gray;
+      transition: fill 0.3s ease-in-out;
+    }
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: $secondary-dark;
+    }
+  }
+  &.success {
+    background-color: $green;
+    color: $lighter-gray;
+    svg > path {
+      fill: $lighter-gray;
+      transition: fill 0.3s ease-in-out;
+    }
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: $green-dark;
+    }
+  }
+
+  &:disabled{
+    background: $dark-gray;
+    color: #fff;
+    box-shadow: none;
+    cursor: not-allowed;
+  }
+}
+
+.material-icons {
+  font-size: 18px;
+
+  &.md-16 {
+    font-size: 16px;
+  }
+}
+
+input {
+  border: none;
+  background: #fff;
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 0 5px 20px 5px rgba($dark-gray, 0.15);
+}
