@@ -1,7 +1,27 @@
 {
   "name": "playlister",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "author": {
+    "name": "Mehdi Jai",
+    "url": "https://github.com/MEDOSTUDIOS"
+  },
+  "repository": {
+    "url": "https://github.com/MEDOSTUDIOS/playlister.git"
+  },
+  "keywords": [
+    "playlist",
+    "youtube",
+    "electron js",
+    "sequelize",
+    "sqlite3",
+    "ORM",
+    "desktop application",
+    "javascript application",
+    "nodejs app",
+    "vue 3",
+    "vue cli"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
